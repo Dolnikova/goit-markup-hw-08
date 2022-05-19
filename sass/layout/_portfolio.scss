@@ -9,13 +9,27 @@
   text-decoration: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-  &:first-child {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.filter-list:first-child {
+  padding-right: 15px;
+  @media screen and (min-width: 768px) {
+    padding-right: 79px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-right: 495px;
   }
 }
 .filter-list__menu {
+  
   position: relative;
+  
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -59,17 +73,32 @@
   overflow: hidden;
 }
 .after-filter {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin-left: -30px;
+  // }
   &__item {
-    position: relative;
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      position: relative;
+      width: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      width: calc(100% / 3 - 30px);
+      margin-left: 30px;
+    }
   }
 }
+
 .post-filter-list {
   text-decoration: none;
   display: block;

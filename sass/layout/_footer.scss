@@ -2,11 +2,11 @@
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: -30px;
+}
+.footer .container {
   align-items: baseline;
-  & .container {
-    align-items: baseline;
-    display: flex;
-  }
+  display: flex;
 }
 .address {
   font-family: "Roboto", Tahoma, sans-serif;
