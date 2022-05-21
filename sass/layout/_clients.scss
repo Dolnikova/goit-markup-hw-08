@@ -1,6 +1,11 @@
 .client-list {
   display: flex;
   margin-bottom: -30px;
+  @media screen and (min-width: 480px) {
+    // display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
   @media screen and (min-width: 768px) {
     // display: flex;
     flex-wrap: wrap;
@@ -14,10 +19,11 @@
 }
 .client-list__item {
   margin-bottom: 30px;
-  min-width: 210px;
+  width: 100%;
   @media screen and (min-width: 480px) {
+    min-width: 210px;
     position: relative;
-    width: calc((100% - 30px) / 2);
+    width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
   @media screen and (min-width: 768px) {
@@ -82,4 +88,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+  }
 }

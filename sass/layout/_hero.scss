@@ -1,8 +1,10 @@
 .hero {
+  display: flex;
   background-color: var(--background-color);
   color: var(--logo-footer-adress-hero);
   text-align: center;
-  max-width: 480px;
+  min-width: 480px;
+  // max-width: 100%;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -12,19 +14,23 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-after.jpg);
+
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-top: 128px;
-    padding-bottom: 108px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  // @include mobile {
+  //   max-width: 480px;
+  // }
+  // @include tablet {
+  //   max-width: 768px;
+  //   padding-top: 128px;
+  //   padding-bottom: 108px;
+  // }
+  // @include desktop {
+  //   max-width: 1600px;
+  //   padding-top: 200px;
+  //   padding-bottom: 200px;
+  // }
 
   &__title {
     font-weight: 900;
@@ -37,11 +43,11 @@
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 0.06em;
-    @media screen and (max-width: 1199px) {
-      font-size: 26px;
-      line-height: 1.62;
-      max-width: 360px;
-    }
+    // @include desktop {
+    //   font-size: 26px;
+    //   line-height: 1.62;
+    //   max-width: 360px;
+    // }
   }
   &__button {
     font-weight: 700;
@@ -59,5 +65,11 @@
   }
   .container & {
     display: block;
+    max-width: 100%;
+    padding: 0;
+     @media screen and (min-width: 768px) {
+      display: flex;
+      max-width: 100%;
+    }
   }
 }

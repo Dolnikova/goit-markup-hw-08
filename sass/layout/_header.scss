@@ -63,6 +63,12 @@
     --text-color: var(--second-color);
   }
 }
+.contacts__link:last-child {
+  margin-top: 0;
+  @media screen and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+}
 .contacts__icon {
   display: inline-flex;
   margin-right: 10px;
@@ -114,6 +120,12 @@
   }
 }
 .site-nav {
+  display: flex;
+
+  &__item {
+    position: relative;
+  }
+
   @media (max-width: 767px) {
     position: absolute;
     width: 1px;
@@ -127,15 +139,10 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  display: flex;
-  &__item {
-    position: relative;
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
 }
-
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav {
   display: flex;
   align-items: center;
