@@ -276,7 +276,7 @@ li {
   background-color: var(--background-color);
   color: var(--logo-footer-adress-hero);
   text-align: center;
-  max-width: 768px;
+  max-width: 480px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -287,13 +287,14 @@ li {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     padding-top: 128px;
     padding-bottom: 108px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -349,15 +350,21 @@ li {
 }
 
 .modal {
-  max-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  min-height: 609px;
   background-color: var(--logo-footer-adress-hero);
   border: none;
-  position: absolute;
+  position: relative;
   display: contents;
   left: 100%;
   transform: translate(-100%, -50%);
   transition: transform 250ms;
+}
+@media screen and (max-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__button {
   position: absolute;
@@ -422,20 +429,33 @@ li {
   background-color: var(--logo-footer-adress-hero);
   padding: 40px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: transform 250ms;
 }
-.block-modal__title {
-  font-family: "Roboto", Tahoma, sans-serif;
-  font-size: 20px;
-  line-height: 1.15;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--brand-color);
-  text-align: center;
-  margin-bottom: 12px;
+@media screen and (min-width: 768px) {
+  .block-modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .block-modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .block-modal__title {
+    font-family: "Roboto", Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+    text-align: center;
+    margin-bottom: 12px;
+  }
 }
 
 .is-hidden {
@@ -707,6 +727,8 @@ li {
 }
 
 .command {
+  padding-left: 0;
+  padding-right: 0x;
   margin-bottom: -30px;
 }
 @media screen and (min-width: 768px) {
@@ -726,6 +748,14 @@ li {
 
 .command__item {
   margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .command__item {
+    position: relative;
+    width: calc(100% - 30px);
+    margin-left: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .command__item {
@@ -821,7 +851,7 @@ li {
 @media screen and (min-width: 480px) {
   .client-list__item {
     position: relative;
-    width: calc(50% - 30px);
+    width: calc((100% - 30px) / 2);
     margin-left: 30px;
   }
 }
@@ -1093,6 +1123,7 @@ input.footer-modal-input {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  flex-direction: row;
 }
 @media screen and (min-width: 768px) {
   .filter-list {
