@@ -1,0 +1,22 @@
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin table {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+/////////////дальше упрощенная форма, но надо самим прописывать 480 768 1200
+
+@mixin media($width) {
+@media screen and (min-width: $width){
+    @content;
+}
+}

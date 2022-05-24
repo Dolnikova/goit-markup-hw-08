@@ -1,7 +1,9 @@
 .section {
+  max-width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
+    min-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -21,11 +23,14 @@
   overflow: hidden;
 }
 .description {
+  max-width: 100%;
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
+    display: table-row;
     flex-wrap: wrap;
     margin-left: -30px;
+
   }
 }
 
@@ -36,6 +41,7 @@
   }
 }
 .description__item {
+  max-width: 100%;
   background-position: center;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
@@ -71,6 +77,7 @@
   // }
 }
 .description__box {
+  max-width: 100%;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -90,6 +97,7 @@
   color: var(--text-color);
 }
 .title {
+  max-width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -99,5 +107,4 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
-
 }
