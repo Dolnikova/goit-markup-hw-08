@@ -23,7 +23,7 @@
   left: 100%;
   transform: translate(-100%, -50%);
   transition: transform 250ms;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     max-width: 528px;
     min-height: 581px;
   }
@@ -101,7 +101,6 @@
   //   padding-bottom: 108px;
   // }
   @media screen and (min-width: 768px) {
-    // position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-55%, -50%);
