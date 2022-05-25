@@ -17,13 +17,14 @@
   min-height: 609px;
   background-color: var(--logo-footer-adress-hero);
   border: none;
-  position: relative;
-  // position: absolute;
+  // position: relative;
+  position: absolute;
   display: contents;
   left: 100%;
   transform: translate(-100%, -50%);
   transition: transform 250ms;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
+    // position: relative;
     max-width: 528px;
     min-height: 581px;
   }
@@ -95,18 +96,12 @@
   // left: 50%;
   // transform: translate(-50%, -50%);
   transition: transform 250ms;
-  //   @media screen and (min-width: 768px) {
-  //   max-width: 768px;
-  //   padding-top: 128px;
-  //   padding-bottom: 108px;
-  // }
   @media screen and (min-width: 768px) {
     top: 50%;
     left: 50%;
     transform: translate(-55%, -50%);
+  }
   @media screen and (min-width: 1200px) {
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
   &__title {
@@ -119,7 +114,6 @@
     text-align: center;
     margin-bottom: 12px;
   }
-}
 }
 .is-hidden {
   opacity: 0;

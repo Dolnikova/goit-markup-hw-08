@@ -20,6 +20,7 @@
   }
 }
 .footer__box {
+
   @media screen and (min-width: 768px) {
     position: absolute;
     padding-left: 76px;
@@ -238,9 +239,6 @@
 }
 .modal-form {
   position: relative;
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-  }
 }
 .footer-modal-input {
   width: 100%;

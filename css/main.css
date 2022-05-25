@@ -388,13 +388,13 @@ li {
   min-height: 609px;
   background-color: var(--logo-footer-adress-hero);
   border: none;
-  position: relative;
+  position: absolute;
   display: contents;
   left: 100%;
   transform: translate(-100%, -50%);
   transition: transform 250ms;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
     min-height: 581px;
@@ -472,24 +472,20 @@ li {
     transform: translate(-55%, -50%);
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .block-modal {
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
   }
 }
-@media screen and (min-width: 768px) {
-  .block-modal__title {
-    font-family: "Roboto", Tahoma, sans-serif;
-    font-size: 20px;
-    line-height: 1.15;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    color: var(--brand-color);
-    text-align: center;
-    margin-bottom: 12px;
-  }
+.block-modal__title {
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .is-hidden {
@@ -1233,11 +1229,6 @@ li {
 
 .modal-form {
   position: relative;
-}
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    position: absolute;
-  }
 }
 
 .footer-modal-input {
