@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -25,16 +25,25 @@
               <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts">
           <li class="site-nav__item">
             <a class="contacts__link mail" href="mailto:info@devstudio.com">
               <svg class="contacts__icon envelope">
-                <use href="./images/symbol-defs1.svg#envelope"></use></svg>info@devstudio.com</a>
+                <use href="./images/symbol-defs1.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="site-nav__item">
             <a class="contacts__link telefon" href="tel:+380961111111">
@@ -57,27 +66,57 @@
               <button class="filter-list__button" type="button">Все</button>
             </li>
             <li class="filter-list__menu">
-              <button class="filter-list__button" type="button">Веб-сайты</button>
+              <button class="filter-list__button" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="filter-list__menu">
-              <button class="filter-list__button" type="button">Приложения</button>
+              <button class="filter-list__button" type="button">
+                Приложения
+              </button>
             </li>
             <li class="filter-list__menu">
               <button class="filter-list__button" type="button">Дизайн</button>
             </li>
             <li class="filter-list__menu">
-              <button class="filter-list__button" type="button">Маркетинг</button>
+              <button class="filter-list__button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="after-filter">
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img
-                    class="img"
-                    src="./images/работы/работа1.jpg"
-                    alt="Технокряк"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа1.jpg    1x,
+                        ./images/работы/работа1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа1-tab-1x.jpg 1x,
+                        ./images/работы/работа1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа1-mob-1x.jpg 1x,
+                        ./images/работы/работа1-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/работы/работа1.jpg    1x,
+                        ./images/работы/работа1-2x.jpg 2x
+                      "
+                      class="img"
+                      src="./images/работы/работа1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -96,10 +135,35 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img
-                    src="./images/работы/работа2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа2.jpg    1x,
+                        ./images/работы/работа2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа2-tab-1x.jpg 1x,
+                        ./images/работы/работа2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа2-mob-1x.jpg 1x,
+                        ./images/работы/работа2-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/работы/работа2.jpg    1x,
+                        ./images/работы/работа2-2x.jpg 2x
+                      "
+                      class="img"
+                      src="./images/работы/работа2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -120,7 +184,29 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img src="./images/работы/работа3.jpg" alt="Ресторан Seafood" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа3.jpg    1x,
+                        ./images/работы/работа3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа3-tab-1x.jpg 1x,
+                        ./images/работы/работа3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа3-mob-1x.jpg 1x,
+                        ./images/работы/работа3-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/работы/работа3.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -139,7 +225,26 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img src="./images/работы/работа4.jpg" alt="Проект Prime" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа4.jpg    1x,
+                        ./images/работы/работа4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа4-tab-1x.jpg 1x,
+                        ./images/работы/работа4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа4-mob-1x.jpg 1x,
+                        ./images/работы/работа4-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/работы/работа4.jpg" alt="Проект Prime" />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -158,7 +263,26 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img src="./images/работы/работа5.jpg" alt="Проект Boxes" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа5.jpg    1x,
+                        ./images/работы/работа5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа5-tab-1x.jpg 1x,
+                        ./images/работы/работа5-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа5-mob-1x.jpg 1x,
+                        ./images/работы/работа5-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/работы/работа5.jpg" alt="Проект Boxes" />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -177,10 +301,29 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img
-                    src="./images/работы/работа6.jpg"
-                    alt="Inspiration has no Borders"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа6.jpg    1x,
+                        ./images/работы/работа6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа6-tab-1x.jpg 1x,
+                        ./images/работы/работа6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа6-mob-1x.jpg 1x,
+                        ./images/работы/работа6-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/работы/работа6.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -201,10 +344,29 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img
-                    src="./images/работы/работа7.jpg"
-                    alt="Издание Limited Edition"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа7.jpg    1x,
+                        ./images/работы/работа7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа7-tab-1x.jpg 1x,
+                        ./images/работы/работа7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа7-mob-1x.jpg 1x,
+                        ./images/работы/работа7-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/работы/работа7.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -225,7 +387,26 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img src="./images/работы/работа8.jpg" alt="Проект LAB" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа8.jpg    1x,
+                        ./images/работы/работа8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа8-tab-1x.jpg 1x,
+                        ./images/работы/работа8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа8-mob-1x.jpg 1x,
+                        ./images/работы/работа8-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/работы/работа8.jpg" alt="Проект LAB" />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -244,7 +425,29 @@
             <li class="after-filter__item">
               <a class="post-filter-list" href="">
                 <div class="after-filter-open">
-                  <img src="./images/работы/работа9.jpg" alt="Growing Business" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/работы/работа9.jpg    1x,
+                        ./images/работы/работа9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/работы/работа9-tab-1x.jpg 1x,
+                        ./images/работы/работа9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/работы/работа9-mob-1x.jpg 1x,
+                        ./images/работы/работа9-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/работы/работа9.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <div class="after-filter-action">
                     <p class="after-filter-action__text">
                       Ресурс предлагает комплексные предложения с разным уровнем

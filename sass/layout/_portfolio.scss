@@ -8,9 +8,12 @@
   color: var(--brand-color);
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   margin-bottom: 40px;
+
   @media screen and (min-width: 768px) {
+    justify-content: center;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -27,9 +30,8 @@
   }
 }
 .filter-list__menu {
-  
   position: relative;
-  
+
   &:not(:last-child) {
     margin-right: 8px;
   }
@@ -49,6 +51,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: var(--second-color);
@@ -58,7 +61,12 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
+.filter-list__button {
+  @media screen and (max-width: 1199px) {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+}
 .our-work {
   position: absolute;
   width: 1px;
