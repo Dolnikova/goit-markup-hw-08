@@ -3,6 +3,7 @@
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  
   // padding-left: auto;
   // padding-right: auto;
   @media screen and (min-width: 1200px) {
@@ -13,14 +14,15 @@
   & .container {
     align-items: baseline;
     max-width: 100%;
+    // justify-content: center;
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
+      justify-content: center;
     }
   }
 }
 .footer__box {
-
   @media screen and (min-width: 768px) {
     position: absolute;
     padding-left: 76px;
@@ -183,7 +185,6 @@
     max-width: 100%;
     margin-left: 93px;
     align-items: start;
-    padding-right: 215px;
   }
 
   &__title {

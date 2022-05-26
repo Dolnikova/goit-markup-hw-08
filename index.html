@@ -24,6 +24,11 @@
           <a class="logo" href="" lang="en"
             ><span class="logo__part">Web</span>Studio</a
           >
+          <button type="button" class="menu-open-btn">
+            <svg class="menu__button" width="40" height="40" data-menu-close>
+            <use href="./images/symbol-defs1.svg#line"></use>
+          </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__item">
               <a
@@ -58,6 +63,63 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-block">
+        <button type="button" class="menu-close-btn">
+          <svg class="mob-menu__button" width="40" height="40" data-menu-close>
+            <use href="./images/symbol-defs1.svg#x"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-nav">
+            <li class="mob-menu-nav__item">
+              <a
+                class="mob-menu__link mob-menu__link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu-nav__item">
+              <a class="mob-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu-nav__item">
+              <a class="mob-menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        </div> 
+        <div class="menu-bottom">
+        <ul class="mob-menu-contacts">
+          <li class="mob-menu__item">
+            <a class="mob-menu-telefon__link " href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>  
+          <li class="mob-menu__item">
+            <a class="mob-menu-mail__link " href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+               
+        </ul>
+        <ul class="soc-mob-menu">
+          <li class="soc-mob-menu__item">
+              <a class="soc-mob-menu__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+            </li>
+            <li class="soc-mob-menu__item">
+              <a class="soc-mob-menu__link" href="" target="_blank" rel="noopener noreferrer nofollow">Twitter</a>
+            </li>
+            <li class="soc-mob-menu__item">
+              <a class="soc-mob-menu__link" href="" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+            </li>
+            <li class="soc-mob-menu__item">
+              <a class="soc-mob-menu__link" href="" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
+          </div>
+      </div>
       </div>
     </header>
     <main>
@@ -315,7 +377,7 @@
                 />
                 <img
                   srcset="
-                    ./images/сотрудники/сотрудник3.jpg   1x,
+                    ./images/сотрудники/сотрудник3.jpg    1x,
                     ./images/сотрудники/сотрудник3-2x.jpg 2x
                   "
                   src="./images/сотрудники/сотрудник3.jpg"
@@ -654,5 +716,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
