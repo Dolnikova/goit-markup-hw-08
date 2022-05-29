@@ -7,7 +7,6 @@
 }
 .logo {
   color: var(--logo-color);
-  // margin-right: 15px;
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -131,10 +130,15 @@
     margin-left: auto;
   }
 }
+.heder-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .site-nav {
   display: flex;
   align-items: flex-end;
-  // max-width: 100%;
   &__item {
     position: relative;
     &:not(:last-child) {
@@ -186,6 +190,7 @@
   margin-left: auto;
   border: none;
   display: contents;
+  cursor: pointer;
   @media (min-width: 768px) {
     position: absolute;
     width: 1px;
@@ -206,10 +211,9 @@
   border: none;
 }
 .mob-menu {
-  padding-top: 15px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: var(--logo-footer-adress-hero);
@@ -228,6 +232,10 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+  .mob-menu-block {
+    max-height: 100%;
+    max-width: 768px;
   }
   .container {
     overflow-y: auto;
@@ -254,7 +262,7 @@
   text-decoration: none;
   font-family: $font-family-2nd;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 10vw;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--brand-color);
@@ -266,13 +274,13 @@
 }
 .mob-menu-telefon__link {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 8vw;
   line-height: 1.175;
   color: var(--second-color);
 }
 .mob-menu-mail__link {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 7vw;
   line-height: 1.167;
   color: var(--text-color);
 }
@@ -293,7 +301,7 @@
   text-decoration: none;
   font-family: $font-family-2nd;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 3vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--second-color);

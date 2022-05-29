@@ -92,6 +92,7 @@
   position: absolute;
   transition: transform 250ms;
   @media screen and (min-width: 768px) {
+    min-width: 528px;
     top: 50%;
     left: 50%;
     transform: translate(-55%, -50%);
@@ -154,15 +155,17 @@
 
 .check-text {
   font-family: $font-family-1st;
-  font-size: 14px;
+  font-size: 2vw;
   line-height: 1.72;
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: flex;
-  // text-align: center;
   align-items: center;
-  // justify-content: center;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 .modal-icon-span {
   margin-right: 8px;

@@ -1,44 +1,23 @@
 .client-list {
   display: flex;
-  margin-bottom: -30px;
+  margin-bottom: -15px;
   flex-wrap: wrap;
+  align-content: space-between;
   @media screen and (min-width: 768px) {
-    // display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
   }
   @media screen and (min-width: 1200px) {
-    // display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
   }
 }
 .client-list__item {
-  margin-bottom: 30px;
-  width: 100%;
-  position: relative;
-  width: calc(100% / 2 - 30px);
-  margin-left: 30px;
-  // min-width: 210px;
-  flex-wrap: wrap;
-  // @media screen and (min-width: 480px) {
-  //   min-width: 210px;
-  //   position: relative;
-  //   width: calc(100% / 2 - 30px);
-  //   margin-left: 30px;
-  // }
-  @media screen and (min-width: 768px) {
-    position: relative;
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    min-width: 226px;
-  }
+  height: 92px;
+  margin: 15px;
+  flex-basis: calc((100% - 60px) / 2);
   @media screen and (min-width: 1200px) {
-    position: relative;
-    margin-bottom: -30px;
-    width: calc(100% / 6 - 30px);
-    margin-left: 30px;
-    min-width: 170px;
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 .client-list__link {
@@ -48,10 +27,7 @@
   display: flex;
   border: 1px solid var(--client-command-color);
   background-size: contain;
-  // width: 100%;
   height: 92px;
-  // width: 170px;
-  // height: 92px;
   align-items: center;
   box-sizing: border-box;
   border-radius: 4px;
@@ -62,14 +38,10 @@
     border: 1px solid var(--second-color);
     fill: var(--second-color);
   }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .client-list__item + .client-list__item {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .client-list__icon {

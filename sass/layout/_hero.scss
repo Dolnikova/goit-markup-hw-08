@@ -1,18 +1,15 @@
 .hero {
-  // display: flex;
   background-color: var(--background-color);
   color: var(--logo-footer-adress-hero);
   text-align: center;
-  // max-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background: center;
   background-size: cover;
-  // background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
-  // max-width: 480px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -33,9 +30,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-tab.jpg);
-    // max-width: 768px;
-    // padding-top: 128px;
-    // padding-bottom: 108px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -105,9 +99,5 @@
     padding: 0;
     padding-top: 118px;
     padding-bottom: 118px;
-    // @media screen and (min-width: 768px) {
-    //   display: flex;
-    //   max-width: 100%;
-    // }
   }
 }
