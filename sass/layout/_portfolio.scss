@@ -110,6 +110,8 @@
 }
 
 .post-filter-list {
+  flex-direction: column;
+  width: 100%;
   text-decoration: none;
   display: block;
   overflow: hidden;
@@ -154,6 +156,7 @@
 }
 
 .after-filter-text {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid var(--after-filtre-text-box-color);
   border-bottom: 1px solid var(--after-filtre-text-box-color);

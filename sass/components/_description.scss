@@ -23,7 +23,6 @@
   overflow: hidden;
 }
 .description {
-  max-width: 100%;
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -32,14 +31,13 @@
   }
 }
 
-.description__item:not(:last-child) {
-  margin-right: 0;
-  @media screen and (max-width: 767px) {
-    margin-right: 15px;
-  }
-}
+// .description__item:not(:last-child) {
+//   margin-right: 0;
+//   @media screen and (max-width: 767px) {
+//     margin-right: 15px;
+//   }
+// }
 .description__item {
-  max-width: 100%;
   background-position: center;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
