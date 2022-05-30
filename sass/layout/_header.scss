@@ -272,6 +272,30 @@
   letter-spacing: 0.02em;
   color: var(--brand-color);
 }
+.mob-menu__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &.mob-menu__link--current {
+    fill: var(--second-color);
+  }
+  &.mob-menu__link--current::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    fill: var(--second-color);
+  }
+}
+.mob-menu__link.mob-menu__link--current {
+  @media (max-width: 768px) {
+    color: var(--second-color);
+  }
+}
 .mob-menu-contacts__link {
   font-family: $font-family-2nd;
   font-weight: 500;
