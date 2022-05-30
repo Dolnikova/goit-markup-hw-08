@@ -228,7 +228,7 @@ li {
 .contacts {
   max-width: 100%;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .contacts {
     position: absolute;
     width: 1px;
@@ -278,7 +278,7 @@ li {
     margin-right: 30px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .site-nav {
     position: absolute;
     width: 1px;
@@ -426,7 +426,7 @@ li {
   fill: var(--second-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .mob-menu__link.mob-menu__link--current {
     color: var(--second-color);
   }

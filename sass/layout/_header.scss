@@ -112,7 +112,7 @@
 }
 .contacts {
   max-width: 100%;
-  @media (max-width: 767px) {
+  @media (max-width: 767.98px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -154,7 +154,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 767.98px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -292,7 +292,7 @@
   }
 }
 .mob-menu__link.mob-menu__link--current {
-  @media (max-width: 768px) {
+  @media (max-width: 767.98px) {
     color: var(--second-color);
   }
 }
