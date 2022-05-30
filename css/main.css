@@ -208,6 +208,13 @@ li {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+@media (max-width: 1199px) {
+  .site-nav__link,
+.contacts__link {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
 
 .header {
   max-width: 100%;
@@ -1347,7 +1354,7 @@ li {
 @media screen and (min-width: 1200px) {
   .form-button {
     flex-direction: unset;
-    max-width: 570px;
+    min-width: 570px;
   }
 }
 
@@ -1394,6 +1401,11 @@ li {
   outline: none;
   background-color: var(--background-color);
   padding-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-modal-input {
+    max-width: 358px;
+  }
 }
 
 input.footer-modal-input {

@@ -165,7 +165,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-direction: unset;
-    max-width: 570px;
+    min-width: 570px;
   }
 }
 .subscribe-block {
@@ -210,6 +210,9 @@
   outline: none;
   background-color: var(--background-color);
   padding-left: 12px;
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
+  }
 }
 input.footer-modal-input {
   height: 50px;
