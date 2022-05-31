@@ -99,13 +99,13 @@
   line-height: 1.143;
   letter-spacing: 0.02em;
   text-decoration: none;
-
+}
+.contacts__link {
   @media (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.167;
   }
 }
-
 .header {
   max-width: 100%;
   border-bottom: 1px solid var(--header-border-color);
