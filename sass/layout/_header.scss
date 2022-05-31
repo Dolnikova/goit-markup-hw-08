@@ -19,7 +19,7 @@
   @media screen and (min-width: 1200px) {
     padding-top: 25px;
     padding-bottom: 24px;
-    margin-right: 88px;
+    margin-right: 93px;
   }
 }
 .logo__part,
@@ -71,10 +71,14 @@
     --text-color: var(--second-color);
   }
 }
-.site-nav__item:last-child {
-  margin-top: 0;
-  @media screen and (max-width: 1199px) {
-    margin-top: 10px;
+.contacts-nav__item {
+  margin: 0 auto;
+}
+.contacts-nav__item:last-child {
+  margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    margin-top: 0;
   }
 }
 .contacts__icon {
@@ -126,8 +130,8 @@
     overflow: hidden;
   }
   @media screen and (min-width: 768px) {
-    display: block;
-    margin-left: 84px;
+    margin-left: auto;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
     align-items: center;
@@ -216,6 +220,8 @@
   border: none;
 }
 .mob-menu {
+  max-width: 480px;
+  flex-direction: column;
   padding: 48px 40px;
   position: fixed;
   z-index: 5;
@@ -267,15 +273,13 @@
   text-decoration: none;
   font-family: $font-family-2nd;
   font-weight: 500;
-  font-size: 10vw;
+  font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--brand-color);
 }
 .mob-menu__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   &.mob-menu__link--current {
     fill: var(--second-color);
   }
@@ -303,13 +307,13 @@
 }
 .mob-menu-telefon__link {
   text-decoration: none;
-  font-size: 8vw;
+  font-size: 34px;
   line-height: 1.175;
   color: var(--second-color);
 }
 .mob-menu-mail__link {
   text-decoration: none;
-  font-size: 7vw;
+  font-size: 24px;
   line-height: 1.167;
   color: var(--text-color);
 }
@@ -320,11 +324,9 @@
 .mob-menu__item:last-child {
   margin-bottom: 64px;
 }
-.mob-menu-nav {
-  margin-left: 15px;
-}
+
 .menu-bottom {
-  margin-left: 15px;
+  flex-direction: column;
 }
 .soc-mob-menu__link {
   text-decoration: none;

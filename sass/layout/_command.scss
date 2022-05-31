@@ -4,9 +4,10 @@
   line-height: 1.172;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-top: 0;
   @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.18;
   }
@@ -14,8 +15,6 @@
 .section--otherbackgraund {
   background-color: var(--description-color);
   text-align: center;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 .works,
 .command-work {

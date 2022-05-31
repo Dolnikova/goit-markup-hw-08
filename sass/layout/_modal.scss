@@ -5,6 +5,10 @@
   top: 0;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms;
+  padding: 93px 15px;
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 
   &.is-hidden {
     visibility: hidden;
@@ -89,13 +93,14 @@
 .block-modal {
   background-color: var(--logo-footer-adress-hero);
   padding: 40px;
-  position: absolute;
+  position: relative;
   transition: transform 250ms;
   @media screen and (min-width: 768px) {
-    min-width: 528px;
+    position: absolute;
+    min-width: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-55%, -50%);
+    transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 1200px) {
     transform: translate(-50%, -50%);
